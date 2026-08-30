@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8746354988029203920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6933127849028567058}
+  - component: {fileID: 6730235204695819404}
+  m_Layer: 0
+  m_Name: Car Swapper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6933127849028567058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8746354988029203920}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6730235204695819404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8746354988029203920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535c583f7e277cf42b67cf716c9fde87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCarManager: {fileID: 0}
+  wheelContainer:
+  - leftWheel: {fileID: -1380151539892530698, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    rightWheel: {fileID: 7416325723335109510, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+  - leftWheel: {fileID: 2835832104791053283, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    rightWheel: {fileID: 6369856267428047171, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+  - leftWheel: {fileID: -3719223174984468691, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    rightWheel: {fileID: 5911209450270831686, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+  phisicalCarComponents:
+    bodyMeshFilter: {fileID: 0}
+    bodyMeshRenderer: {fileID: 0}
+    wheels:
+    - rightSide: 0
+      frontSide: 1
+      wheelGameObject: {fileID: 0}
+      wheelMeshFilter: {fileID: 0}
+      wheelMeshRenderer: {fileID: 0}
+      wheelTransform: {fileID: 0}
+    - rightSide: 1
+      frontSide: 1
+      wheelGameObject: {fileID: 0}
+      wheelMeshFilter: {fileID: 0}
+      wheelMeshRenderer: {fileID: 0}
+      wheelTransform: {fileID: 0}
+    - rightSide: 0
+      frontSide: 0
+      wheelGameObject: {fileID: 0}
+      wheelMeshFilter: {fileID: 0}
+      wheelMeshRenderer: {fileID: 0}
+      wheelTransform: {fileID: 0}
+    - rightSide: 1
+      frontSide: 0
+      wheelGameObject: {fileID: 0}
+      wheelMeshFilter: {fileID: 0}
+      wheelMeshRenderer: {fileID: 0}
+      wheelTransform: {fileID: 0}
+  visualCarContainers:
+  - nameOfCar: Mustang
+    bodyMesh: {fileID: -1213744347464686493, guid: 74d310c2d682ae34dbcc1b07c69b75fc, type: 3}
+    bodyHexColor: '#0202FF'
+    leftWheelMesh: {fileID: -1380151539892530698, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    rightWheelMesh: {fileID: 7416325723335109510, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    wheelCoords:
+      wheelX: 0.95
+      wheelY: 0.6
+      wheelFrontZ: 1.7
+      wheelRearZ: -1.4
+  - nameOfCar: Camaro
+    bodyMesh: {fileID: -5606128731111068234, guid: 74d310c2d682ae34dbcc1b07c69b75fc, type: 3}
+    bodyHexColor: '#FFDC01'
+    leftWheelMesh: {fileID: 2835832104791053283, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    rightWheelMesh: {fileID: 6369856267428047171, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    wheelCoords:
+      wheelX: 0.95
+      wheelY: 0.7
+      wheelFrontZ: 1.55
+      wheelRearZ: -1.3
+  - nameOfCar: Supra
+    bodyMesh: {fileID: -333587726273526432, guid: 74d310c2d682ae34dbcc1b07c69b75fc, type: 3}
+    bodyHexColor: '#FF7601'
+    leftWheelMesh: {fileID: 2835832104791053283, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    rightWheelMesh: {fileID: 6369856267428047171, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    wheelCoords:
+      wheelX: 0.76
+      wheelY: 0.6
+      wheelFrontZ: 1.76
+      wheelRearZ: -0.76
+  - nameOfCar: Dodge
+    bodyMesh: {fileID: 5967042692067771035, guid: 74d310c2d682ae34dbcc1b07c69b75fc, type: 3}
+    bodyHexColor: '#000000'
+    leftWheelMesh: {fileID: -3719223174984468691, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    rightWheelMesh: {fileID: 5911209450270831686, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    wheelCoords:
+      wheelX: 0.85
+      wheelY: 0.65
+      wheelFrontZ: 1.55
+      wheelRearZ: -1.4
+  - nameOfCar: Porsche
+    bodyMesh: {fileID: -942953961815538405, guid: 74d310c2d682ae34dbcc1b07c69b75fc, type: 3}
+    bodyHexColor: '#00EFFF'
+    leftWheelMesh: {fileID: -3719223174984468691, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    rightWheelMesh: {fileID: 5911209450270831686, guid: c7d48e1cb6ac8fe438f340d243734c24, type: 3}
+    wheelCoords:
+      wheelX: 0.77
+      wheelY: 0.65
+      wheelFrontZ: 1.48
+      wheelRearZ: -0.92
+  currentShowCarIndex: 0

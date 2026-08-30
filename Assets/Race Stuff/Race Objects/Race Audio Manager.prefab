@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2852369791266094345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7142816337709146130}
+  - component: {fileID: 7179887980294160219}
+  m_Layer: 0
+  m_Name: Race Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7142816337709146130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2852369791266094345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -105, y: 1, z: 105}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7179887980294160219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2852369791266094345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1457c4fd1cec6954ea43e8ec865953a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 1
+  checkpointTriggerClip: {fileID: 8300000, guid: 7569de764e38bad49bb55a4ae88700f1, type: 3}
+  countdownClip: {fileID: 8300000, guid: 2e0fc0fead543f44c8ddd1d949f0e325, type: 3}
+  startClip: {fileID: 8300000, guid: 86c6bf8945ecf0e4db44cac5f6c5024d, type: 3}
+  middleClip: {fileID: 8300000, guid: cdc4c2f1508aaf540a882978e92f2626, type: 3}
+  finishClip: {fileID: 8300000, guid: e80f264f2dc2ee4498d47ed5f6f10e91, type: 3}
+  checkpointTriggerSource: {fileID: 0}
+  countdownSource: {fileID: 0}
+  startSource: {fileID: 0}
+  middleSource: {fileID: 0}
+  finishSource: {fileID: 0}

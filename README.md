@@ -51,4 +51,9 @@ The last 2 are affected in terms of how much customization the player has access
 
 Everything was tied together in a simple menu using Unity's uGui system, taking in consideration color theory to make everything look beautiful.  
 Every value found inside this menu, ranging from the costs of each part, to the value that changes the performance of the car can be done without entering the code, neatly using a custom editor.
+
+ ![First image collage of upgrade menu](Images-for-Github/1.png)
+ ![Second image collage of upgrade menu](Images-for-Github/2.png)
+
+
  

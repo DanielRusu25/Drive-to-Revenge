@@ -1,8 +1,9 @@
 # Overview
 Drive to Revenge is a racing game made in Unity using C#. It has complex features such us:  
 * Realistic driving  
-* A system to modify cars 
-* Ai drivers to race  
+* A system to purchase and modify cars  
+* Multiple types of races  
+* Ai drivers to race against  
 * Save system  
 * Big open world map  
 
@@ -23,3 +24,31 @@ $$ \text{Output Torque} = \left( \frac{\text{Current HP} \times 5252}{\text{Engi
 *   5252: The real-world constant used to convert horsepower to foot-pounds of torque.
 *   Gear Ratio & Final Drive: The mechanical multipliers provided by the transmission.
 *   Throttle & Nitrous: Player-driven inputs that modulate the final mechanical force.
+
+## Tuning and purchase system
+There are a total of 5 cars to modify, each with visual and performance upgrades that can be purchased using the in game currency.
+
+**Visual upgrades** consists of 3 different wheel types and 16 colors for each vehicle, being able to change and save at runtime.
+
+**Performance upgrades** affect every aspect inside the car controller and they are split in 2 categories: parts and tuning.  
+Inside the **parts** submenu there are 8 categories that have multiple levels of performance. These categories are: 
+ * engine -> changes the HP
+ * brakes -> changes the brake torque
+ * transmission -> changes the numbers of gears
+ * driveshaft -> changes the time required to shift gears
+ * drivetrain -> swaps between FWD, RWD, AWD
+ * suspension -> unlocks better tuning capabilities
+ * tyers -> changes the grip levels
+ * nitrous -> changes the power increase gained from the nitrous
+
+   
+Inside the **tune** submenu there are 4 categories that you can insert custom values for:
+ * gear ratios and final drive ratio
+ * transmission type: manual vs automatic
+ * Handling: maximum steer angle and the ride height of the car
+ * Suspension: the stiffness and damper
+The last 2 are affected in terms of how much customization the player has access depending on what level of suspension the player has bought inside the parts menu.
+
+Everything was tied together in a simple menu using Unity's uGui system, taking in consideration color theory to make everything look beautiful.  
+Every value found inside this menu, ranging from the costs of each part, to the value that changes the performance of the car can be done without entering the code, neatly using a custom editor.
+ 

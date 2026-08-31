@@ -4,7 +4,8 @@ Drive to Revenge is a racing game made in Unity using C#. It has complex feature
 * A system to purchase and modify cars  
 * Multiple types of races  
 * Ai drivers to race against  
-* Save system  
+* Save system
+* Support for keyboard and controller 
 * Big open world map  
 
 # How everything works
@@ -24,6 +25,11 @@ $$ \text{Output Torque} = \left( \frac{\text{Current HP} \times 5252}{\text{Engi
 *   5252: The real-world constant used to convert horsepower to foot-pounds of torque.
 *   Gear Ratio & Final Drive: The mechanical multipliers provided by the transmission.
 *   Throttle & Nitrous: Player-driven inputs that modulate the final mechanical force.
+
+
+In addition to all of this, the player has both the options of a manual gearbox and an automatic one
+ * manual -> gears change on player input
+ * automatic -> gears increase if the RPMs hit the redline and decrease if they fall beneath the value of  $\frac{\text{redline}}{2}$
 
 ## Tuning and purchase system
 There are a total of 5 cars to modify, each with visual and performance upgrades that can be purchased using the in game currency.
@@ -55,5 +61,6 @@ Every value found inside this menu, ranging from the costs of each part, to the 
  ![First image collage of upgrade menu](Images-for-Github/1.png)
  ![Second image collage of upgrade menu](Images-for-Github/2.png)
 
+## Race system
 
  

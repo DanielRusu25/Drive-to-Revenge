@@ -1,12 +1,13 @@
 # Overview
 Drive to Revenge is a racing game made in Unity using C#. It has complex features such us:  
-* Realistic driving  
-* A system to purchase and modify cars  
-* Multiple types of races  
-* Ai drivers to race against  
-* Save system
-* Support for keyboard and controller 
-* Big open world map  
+* Realistic driving that takes in consideration realistic data (HP, Torque curve, gear ratios, etc.) and applies power to the driven wheels (cars being AWD,RWD or FWD) using a manual or automatic transmission  
+* A system to purchase and modify cars in terms of visual customization or change the performance of the car
+* Multiple types of races , against other cars (driven by AI) or against time  
+* Save system that tracks the player's progress, even if the player quits and renters the game
+* Support for keyboard and controller that seamlessly changes at runtime
+* Big open world map with different types of terrains (City roads, Mountain touge, Forest Passes)
+* Minimap and waypoint system for easy navigation around the map
+* Clean UI that takes in consideration color theory
 
 # How everything works
 
